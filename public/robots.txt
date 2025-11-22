@@ -1,0 +1,6 @@
+# Robots.txt para Fontanería Marco 24H
+User-agent: *
+Disallow:
+
+# Sitemap
+Sitemap: https://fontaneriamarco24h.es/sitemap.xml

@@ -1,0 +1,149 @@
+/* Footer global */
+.footer {
+  background-color: #76797d;
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal de columnas */
+.footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+/* Columnas */
+.footer-column {
+  flex: 1 1 calc(33.333% - 2rem); /* tres columnas desktop */
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-column h3 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.footer-column h5 {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 3px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #000;
+}
+
+/* Barra inferior */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; /* izquierda y derecha */
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #5e6062;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.footer-bottom span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #0d0937;
+}
+
+.footer-bottom img {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Responsive - tablets */
+@media (max-width: 1024px) {
+  .footer-column {
+    flex: 1 1 calc(50% - 2rem); /* dos columnas tablet */
+  }
+}
+
+/* Responsive - móviles */
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 1 1 100%; /* una columna por fila móvil */
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom span {
+    justify-content: center;
+  }
+}
+
+/* Footer pegado al final */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > #root {
+  flex: 1 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer.footer {
+  margin-top: auto;
+}
