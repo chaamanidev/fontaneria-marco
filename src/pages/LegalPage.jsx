@@ -26,7 +26,7 @@ export default function LegalPage() {
             fontaneriamarcos24@gmail.com
           </a>
           .<br />
-          Sitio web: <a href="/">www.tusitio.com</a>.
+          Sitio web: <a href="/">www.fontaneriamarco24h.es</a>.
         </p>
       </section>
 
