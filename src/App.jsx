@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Index from "./pages/Index.jsx";
 import Servicios from "./pages/Servicios.jsx";
 import Contacto from "./pages/Contacto.jsx";
-import LegalPage from "./pages/LegalPAge.jsx";
+import LegalPage from "./pages/LegalPage.jsx";
 import CookiesPage from "./pages/CookiesPage.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 
